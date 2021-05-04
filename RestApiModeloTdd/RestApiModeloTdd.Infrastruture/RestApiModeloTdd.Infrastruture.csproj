@@ -5,16 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CrossCutting\IOC\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Autofac" Version="5.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RestApiModeloTdd.Aplication\RestApiModeloTdd.Aplication.csproj" />
     <ProjectReference Include="..\RestApiModeloTdd.Domain.Core\RestApiModeloTdd.Domain.Core.csproj" />
+    <ProjectReference Include="..\RestApiModeloTdd.Domain.Services\RestApiModeloTdd.Domain.Services.csproj" />
     <ProjectReference Include="..\RestApiModeloTdd.Domain\RestApiModeloTdd.Domain.csproj" />
   </ItemGroup>
 
