@@ -1,23 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RestApiModeloTdd.Domain.Entitys;
+using RestApiModeloDDD.Domain.Entitys;
 using System;
 using System.Linq;
 
-namespace RestApiModeloTdd.Infrastruture.Data
+namespace RestApiModeloDDD.Infrastructure.Data
 {
     public class SqlContext : DbContext
     {
         public SqlContext()
         {
-
         }
 
         public SqlContext(DbContextOptions<SqlContext> options) : base(options)
         {
         }
 
-        public DbSet<Cliente> clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Produto> Produtos { get; set; }
+
         public override int SaveChanges()
         {
             foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))

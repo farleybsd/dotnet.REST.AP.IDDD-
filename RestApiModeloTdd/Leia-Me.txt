@@ -6,9 +6,12 @@ Autofac is an IoC container for Microsoft .NET. It manages the dependencies betw
 na api
 Swashbuckle.AspNetCore 5.4.1
 
-No projeto Apir a lib de injencao de depencia 
+No projeto Api  a lib de injencao de depencia 
 AutoFAC 5.1.4
 Autofac is an IoC container for Microsoft .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.
+
+Autofac.Extensions.DependencyInjection 6.0.0
+Autofac implementation of the interfaces in Microsoft.Extensions.DependencyInjection.Abstractions, the .NET Framework dependency injection abstraction.
 
 
 No projeto Infra instalar a lib de injencao de depencia 
